@@ -13,7 +13,7 @@ export default function Images() {
           component="img"
           height="200"
           width='190'
-          image="/static/images/cards/contemplative-reptile.jp"
+          image="./assets/file-upload-folders-775x465.jpg"
           alt="Upload Image"
         />
         <CardContent>

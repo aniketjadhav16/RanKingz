@@ -11,8 +11,17 @@ function App() {
 
   return (
     <>
-      <Images />
-      <UploadButton />
+      <div style={{ display: 'flex', justifyContent: 'space-between', gap: '100px' }}>
+        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Images />
+          <UploadButton />
+        </div>
+
+        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Images />
+          <UploadButton />
+        </div>
+      </div>
     </>
   )
 }

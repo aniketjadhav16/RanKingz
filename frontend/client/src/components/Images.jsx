@@ -6,6 +6,12 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 export default function Images() {
+  //const [imageFromUser, setImageFromUser] = useState('image="/assets/file-upload-folders-775x465.jpg"')
+
+  /*const userImage = (e) => {
+    e.target.
+  }*/
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -13,7 +19,7 @@ export default function Images() {
           component="img"
           height="200"
           width='190'
-          image="./assets/file-upload-folders-775x465.jpg"
+          //image= {setImageFromUser}
           alt="Upload Image"
         />
         <CardContent>

@@ -18,12 +18,12 @@ function App() {
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '100px' }}>
         <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <Images imageUploaded={image1} />
-          <UploadButton setImageUploaded={setImage1} />
+          <UploadButton setImageUploaded={setImage1} id="file-input-1" />
         </div>
 
         <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <Images imageUploaded={image2} />
-          <UploadButton setImageUploaded={setImage2} />
+          <UploadButton setImageUploaded={setImage2} id="file-input-2" />
         </div>
       </div>
     </>

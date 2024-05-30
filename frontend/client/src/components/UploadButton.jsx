@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
-function UploadButton({ setImageUploaded }) {
+function UploadButton({ setImageUploaded, id }) {
   const handleFileSelect = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -19,7 +19,7 @@ function UploadButton({ setImageUploaded }) {
       <input
         type="file"
         style={{ display: 'none' }}
-        id="file-input"
+        id={id}
         onChange={handleFileSelect}
         accept="image/*"
       />
@@ -27,7 +27,7 @@ function UploadButton({ setImageUploaded }) {
         component="label"
         variant="contained"
         startIcon={<CloudUploadIcon />}
-        htmlFor="file-input"
+        htmlFor={id}
       >
         Upload Image
       </Button>

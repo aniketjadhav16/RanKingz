@@ -2,8 +2,10 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
-function UploadButton({ setImageUploaded, id }) {
+function UploadButton({ setImageUploaded, id, onUpload }) {
   const handleFileSelect = (e) => {
+    console.log(`Button with id ${id} was clicked`);
+    
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
@@ -12,6 +14,7 @@ function UploadButton({ setImageUploaded, id }) {
       };
       reader.readAsDataURL(file);
     }
+    onUpload(id);
   };
 
   return (

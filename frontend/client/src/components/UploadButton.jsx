@@ -4,13 +4,13 @@ import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 function UploadButton({ setImageUploaded, id, onUpload }) {
   const handleFileSelect = (e) => {
-    console.log(`Button with id ${id} was clicked`);
-    
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
       reader.onload = () => {
-        setImageUploaded(reader.result);
+        const image = reader.result;
+        setImageUploaded(image);
+        localStorage.setItem(id, image); // Save the image to localStorage
       };
       reader.readAsDataURL(file);
     }

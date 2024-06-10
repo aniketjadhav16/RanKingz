@@ -1,0 +1,10 @@
+.selection-page-container {
+  text-align: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add space between images */
+  margin-top: 20px;
+}

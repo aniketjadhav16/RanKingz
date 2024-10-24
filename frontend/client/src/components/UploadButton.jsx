@@ -10,7 +10,7 @@ function UploadButton({ setImageUploaded, id, onUpload }) {
       reader.onload = () => {
         const image = reader.result;
         setImageUploaded(image);
-        localStorage.setItem(id, image); // Save the image to localStorage
+        localStorage.setItem(id, image);
       };
       reader.readAsDataURL(file);
     }
